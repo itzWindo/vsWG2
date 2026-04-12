@@ -5,19 +5,92 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    color: white;
 }
 
-.lace-box {
+hr {
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Below is for the navigation bar */
+.innr-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: #555 solid 1px;
+    background-color: #333;
+}
+
+/* Below is for general headers */
+.head {
+    width: 100%;
+    padding: 0px 0 10px;
+    border-top: #555 solid 2px;
+    border-bottom: #555 solid 2px;
+    background-color: #000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+/* Below is for the Development History box */
+.dev-box {
+    width: 1456px;
+    margin: 20px auto;
+    position: relative;
+    padding: 3 16px;
+    background-image: url(menu3-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    outline: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Below is for the Mod Downloads box */
+.mod-box {
+    width: 1456px;
+    text-align: center;
+    margin: 20px auto;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-color: #000;
+    border-style: inset;
+    background-image: url(outside3-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Below is for the small clickable boxes in the index */
+.smol-box {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    line-height: 50px;
+    border-style: inset;
+    border-radius: 10px;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    bottom: 0px;
+    left: 100px;
+}
+
+/* Below is for the Character box in the index */
+.char-box {
     width: 1250px;
     margin: 56px auto 112px;
     position: relative;
-    padding: 0 16px;
+    padding: 3 16px;
     background-image: url(windo3-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     outline: auto;
-    padding: 3px;
 }
 
 .rotated-image {
@@ -28,6 +101,14 @@ body {
     z-index: 0;
 }
 
+/* Below is for the logo in the index */
+.logo3 {
+    width: 560px;
+    transform: rotate(350deg);
+    position: absolute;
+    z-index: 0;
+}
+
 .hexagonal {
     position: absolute;
     left: 600px;
@@ -35,17 +116,10 @@ body {
     z-index: 1;
 }
 
-.windo-name {
-    transform: rotate(350deg);
-    position: absolute;
-    left: 580px;
-    top: 350px;
-}
-
 .windo-icon img[src*="icon3.png"] {
     position: absolute;
     left: 240px;
-    top: 600px;
+    top: 570px;
     z-index: 10;
     -webkit-animation: windo-icon 2s linear 0s infinite alternate;
           animation: windo-icon 2s linear 0s infinite alternate;
@@ -83,14 +157,14 @@ body {
 
 .button-left {
     position: absolute;
-    top: 620px;
+    top: 600px;
     left: 30px;
     border-radius: 50%;
 }
 
 .button-right {
     position: absolute;
-    top: 620px;
+    top: 600px;
     left: 490px;
     border-radius: 50%;
 }
