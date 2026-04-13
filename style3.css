@@ -8,6 +8,14 @@ body {
     color: white;
 }
 
+.mobile-block-message { display: none; }
+
+/* Hide website content and show message on small screens */
+@media only screen and (max-width: 768px) {
+  .desktop-content { display: none; }
+  .mobile-block-message { display: block; text-align: center; margin-top: 50px; };
+}
+
 hr {
   height: 2px;
   background-color: rgb(255, 255, 255);

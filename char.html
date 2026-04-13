@@ -6,109 +6,133 @@
         <title>Characters | vs. Windo</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body">
-        <header id="header" style="border-style: outset; border-color: black; background: white; margin: 10px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center; font-size: large;">
-            <div class="innr-content">
-                <nav>
-                    <l1>
-                        <a href="index.html" style="vertical-align: inherit; color: white;">Home</a> &nbsp; 
-                    </l1>
-                    <l1>
-                        <a href="mod.html" style="vertical-align: inherit; color: white;">Mod Downloads</a> &nbsp; 
-                    </l1>
-                    <l1>
-                        <a href="char.html" style="vertical-align: inherit; color: white;">Characters</a> &nbsp; 
-                    </l1>
-                    <l1>
-                        <a href="dev.html" style="vertical-align: inherit; color: white;">Development</a> &nbsp; 
-                    </l1>
-                    <l1>
-                        <a href="ost.html" style="vertical-align: inherit; color: white;" title="May lag upon loading!">Soundtrack</a> &nbsp; 
-                    </l1>
-                    <l1>
-                        <a href="fart.html" style="vertical-align: inherit; color: white;">Fanart</a> &nbsp; 
-                    </l1>
-                </nav>
+    <body>
+        <div class="mobile-block-message">
+            <div class="head">This page doesn't work properly on mobile devices just yet!</div>
+            <img id="random-image" src="ex1.png" alt="Random Image" style="height: 200px;">
+
+            <script>
+            // 1. Array of possible images
+            const images = [
+                'ex2.png',
+                'ex3.png',
+                'ex4.png',
+                'ex5.png',
+                'ex10.png',
+            ];
+
+            // 2. Select a random image from the array
+            const randomIndex = Math.floor(Math.random() * images.length);
+            const selectedImage = images[randomIndex];
+
+            // 3. Update the image on the page
+            document.getElementById('random-image').src = selectedImage;
+            </script>
+        </div>
+        <div class="desktop-content">
+            <header id="header" style="border-style: outset; border-color: black; background: white; margin: 10px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center; font-size: large;">
+                <div class="innr-content">
+                    <nav>
+                        <l1>
+                            <a href="index.html" style="vertical-align: inherit; color: white;">Home</a> &nbsp; 
+                        </l1>
+                        <l1>
+                            <a href="mod.html" style="vertical-align: inherit; color: white;">Mod Downloads</a> &nbsp; 
+                        </l1>
+                        <l1>
+                            <a href="char.html" style="vertical-align: inherit; color: white;">Characters</a> &nbsp; 
+                        </l1>
+                        <l1>
+                            <a href="dev.html" style="vertical-align: inherit; color: white;">Development</a> &nbsp; 
+                        </l1>
+                        <l1>
+                            <a href="ost.html" style="vertical-align: inherit; color: white;" title="May lag upon loading!">Soundtrack</a> &nbsp; 
+                        </l1>
+                        <l1>
+                            <a href="fart.html" style="vertical-align: inherit; color: white;">Fanart</a> &nbsp; 
+                        </l1>
+                    </nav>
+                </div>
+            </header>
+            <div class="head">
+                <h1>CHARACTERS</h1>
+                <p>This is where information for all characters can be found!</p>
             </div>
-        </header>
-        <div class="head">
-            <h1>CHARACTERS</h1>
-            <p>This is where information for all characters can be found!</p>
-        </div>
-        <hr>
-        <div class="char-box" style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-            <h2>Windo</h2>
-                <h3>Appearance</h3>
-                    <p style="padding: 10px; font-size: large;">Windo is depicted as a 16-sided shape called a Hexadecagon, or an octagonal star. He is composed of 3 colors. Those being crimson, violet, and royal blue. He has a diagonal cross colored black that covers his body, segmenting him into four parts. He has white, circular eyes and a white mouth, which changes shape depending on his expression, and has two blue cubes for hands.</p>
-                <h3 style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Personality</h3>
-                    <p style="padding: 10px; font-size: large;">In his early years, Windo was quiet, shy, and curious. He was afraid of being noticed by humans except for those he had grown bonds with. He is mischievous by causing harmless pranks and confusion. He is deeply attached to those who care for him and struggles to leave their sides.<br>
-                        After digitizing himself, Windo became rather energetic and outgoing. He's generally friendly, has a bit of an attitude, and a bit of a "tsundere" when put in embarrassing situations that can fluster him. He claims not to enjoy physical affection, but this is false. Despite this, he has a shorter temper due to the toxic nature of the internet, which can possess him at times. Though, he stays level-headed.<br>
-                        Windo is someone who does not want to engage in conflict unless he is brought into it or if it is necessary on his end. During conflicts, he does not hold back, hoping the issue gets resolved faster, and he can move on with his life. He has and will always be completely aroace, and feels dissatisfaction in romantic and sexual situations to the extent that he will not hesitate to act violently towards those who test him.</p>
-                <h3>Extra</h3>
-                    <img class="rotated-image" src="banner.jpg" alt="Description" style="width: 450px">
-                    <div class="hexagonal">
-                        <img src="hexagon.png" alt="Description" class="positioned-image" style="width: 150px">
-                    </div>
-                    <div class="windo-icon">
-                        <img src="icon.png" style="width: 100px; float: right;" alt>
-                    </div>
-                    <div class="expression-container" data-expr="1">
-                        <div class="sprite">
-                            <img src="ex1.png">
-                            <img src="ex2.png">
-                            <img src="ex3.png">
-                            <img src="ex4.png">
-                            <img src="ex5.png">
-                            <img src="ex6.png">
-                            <img src="ex7.png">
-                            <img src="ex8.png">
-                            <img src="ex9.png">
-                            <img src="ex10.png">
-                            <img src="ex11.png">
-                            <img src="ex12.png">
-                            <img src="ex13.png">
+            <hr>
+            <div class="char-box" style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                <h2>Windo</h2>
+                    <h3>Appearance</h3>
+                        <p style="padding: 10px; font-size: large;">Windo is depicted as a 16-sided shape called a Hexadecagon, or an octagonal star. He is composed of 3 colors. Those being crimson, violet, and royal blue. He has a diagonal cross colored black that covers his body, segmenting him into four parts. He has white, circular eyes and a white mouth, which changes shape depending on his expression, and has two blue cubes for hands.</p>
+                    <h3 style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Personality</h3>
+                        <p style="padding: 10px; font-size: large;">In his early years, Windo was quiet, shy, and curious. He was afraid of being noticed by humans except for those he had grown bonds with. He is mischievous by causing harmless pranks and confusion. He is deeply attached to those who care for him and struggles to leave their sides.<br>
+                            After digitizing himself, Windo became rather energetic and outgoing. He's generally friendly, has a bit of an attitude, and a bit of a "tsundere" when put in embarrassing situations that can fluster him. He claims not to enjoy physical affection, but this is false. Despite this, he has a shorter temper due to the toxic nature of the internet, which can possess him at times. Though, he stays level-headed.<br>
+                            Windo is someone who does not want to engage in conflict unless he is brought into it or if it is necessary on his end. During conflicts, he does not hold back, hoping the issue gets resolved faster, and he can move on with his life. He has and will always be completely aroace, and feels dissatisfaction in romantic and sexual situations to the extent that he will not hesitate to act violently towards those who test him.</p>
+                    <h3>Extra</h3>
+                        <img class="rotated-image" src="banner.jpg" alt="Description" style="width: 450px">
+                        <div class="hexagonal">
+                            <img src="hexagon.png" alt="Description" class="positioned-image" style="width: 150px">
                         </div>
-                        <div class="button-left">
-                            <button id="left">
-                                <img src="arrow left.png" height="60" title="Change expression!" style="cursor: pointer;">
-                            </button>
+                        <div class="windo-icon">
+                            <img src="icon.png" style="width: 100px; float: right;" alt>
                         </div>
-                        <div class="button-right">
-                            <button id="right">
-                                <img src="arrow right.png" height="60" title="Change expression!" style="cursor: pointer;">
-                            </button>
+                        <div class="expression-container" data-expr="1">
+                            <div class="sprite">
+                                <img src="ex1.png">
+                                <img src="ex2.png">
+                                <img src="ex3.png">
+                                <img src="ex4.png">
+                                <img src="ex5.png">
+                                <img src="ex6.png">
+                                <img src="ex7.png">
+                                <img src="ex8.png">
+                                <img src="ex9.png">
+                                <img src="ex10.png">
+                                <img src="ex11.png">
+                                <img src="ex12.png">
+                                <img src="ex13.png">
+                            </div>
+                            <div class="button-left" style="top: 700px;">
+                                <button id="left">
+                                    <img src="arrow left.png" height="60" title="Change expression!" style="cursor: pointer;">
+                                </button>
+                            </div>
+                            <div class="button-right" style="top: 700px;">
+                                <button id="right">
+                                    <img src="arrow right.png" height="60" title="Change expression!" style="cursor: pointer;">
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <script>
-                        const container = document.querySelector('.expression-container');
-                        const total = 13;
-                        let index = 1;
+                        <script>
+                            const container = document.querySelector('.expression-container');
+                            const total = 13;
+                            let index = 1;
 
-                        document.getElementById('left').onclick = () => {
-                        index = index - 1 || total;
-                        container.dataset.expr = index;
-                        };
+                            document.getElementById('left').onclick = () => {
+                            index = index - 1 || total;
+                            container.dataset.expr = index;
+                            };
 
-                        document.getElementById('right').onclick = () => {
-                        index = index % total + 1;
-                        container.dataset.expr = index;
-                        };
-                    </script>
-                    <a href="WG2 chrom.mp3">
-                        <img src="chromatic.png" style="padding: 15px; width: 250px;" title="Sound warning upon clicking!">
-                    </a>
-                    <img src="specials.png" style="width: 400px;">
-                    <img src="txt1.png" style="width: 350px;">
-                    <a href="char3.html" title="CHANGE THEME">
-                        <img src="windo3.gif" alt="Flipped Image" style="width: 150px; padding-right: 50px;">
-                    </a>
-        </div>
-        <div class="site-footer">
-            <p style="vertical-align: inherit;"> Copyright &copy; 2026 WindoniaWorkz&trade;. All Rights Reserved.<br>
-            <a href="mailto:windowsgod2@gmail.com">Contact Windo</a>
-            </p>
-        </div>
+                            document.getElementById('right').onclick = () => {
+                            index = index % total + 1;
+                            container.dataset.expr = index;
+                            };
+                        </script>
+                        <a href="WG2 chrom.mp3">
+                            <img src="chromatic.png" style="padding: 15px; width: 250px;" title="Sound warning upon clicking!">
+                        </a>
+                        <img src="specials.png" style="width: 400px;">
+                        <img src="txt1.png" style="width: 350px;">
+                        <a href="char3.html" title="CHANGE THEME">
+                            <img src="windo3.gif" alt="Flipped Image" style="width: 150px; padding-right: 50px;">
+                        </a>
+            </div>
+            <div class="site-footer">
+                <p style="vertical-align: inherit;"> Copyright &copy; 2026 WindoniaWorkz&trade;. All Rights Reserved.<br>
+                <a href="mailto:windowsgod2@gmail.com">Contact Windo</a>
+                </p>
+            </div>
         <script src="script.js"></script>
+        </div>
     </body>
 </html>
 

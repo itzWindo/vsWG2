@@ -7,92 +7,116 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header id="header" style="border-style: outset; border-color: black; background: white; margin: 10px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center; font-size: large;">
-            <div class="innr-content">
-                <nav>
-                    <l1>
-                        <a href="index.html" style="vertical-align: inherit; color: white;">Home</a> &nbsp; 
-                    </l1>
-                    <l1>
-                        <a href="mod.html" style="vertical-align: inherit; color: white;">Mod Downloads</a> &nbsp; 
-                    </l1>
-                    <l1>
-                        <a href="char.html" style="vertical-align: inherit; color: white;">Characters</a> &nbsp; 
-                    </l1>
-                    <l1>
-                        <a href="dev.html" style="vertical-align: inherit; color: white;">Development</a> &nbsp; 
-                    </l1>
-                    <l1>
-                        <a href="ost.html" style="vertical-align: inherit; color: white;" title="May lag upon loading!">Soundtrack</a> &nbsp; 
-                    </l1>
-                    <l1>
-                        <a href="fart.html" style="vertical-align: inherit; color: white;">Fanart</a> &nbsp; 
-                    </l1>
-                </nav>
+        <div class="mobile-block-message">
+            <div class="head">This page doesn't work properly on mobile devices just yet!</div>
+            <img id="random-image" src="ex1.png" alt="Random Image" style="height: 200px;">
+
+            <script>
+            // 1. Array of possible images
+            const images = [
+                'ex2.png',
+                'ex3.png',
+                'ex4.png',
+                'ex5.png',
+                'ex10.png',
+            ];
+
+            // 2. Select a random image from the array
+            const randomIndex = Math.floor(Math.random() * images.length);
+            const selectedImage = images[randomIndex];
+
+            // 3. Update the image on the page
+            document.getElementById('random-image').src = selectedImage;
+            </script>
+        </div>
+        <div class="desktop-content">
+            <header id="header" style="border-style: outset; border-color: black; background: white; margin: 10px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center; font-size: large;">
+                <div class="innr-content">
+                    <nav>
+                        <l1>
+                            <a href="index.html" style="vertical-align: inherit; color: white;">Home</a> &nbsp; 
+                        </l1>
+                        <l1>
+                            <a href="mod.html" style="vertical-align: inherit; color: white;">Mod Downloads</a> &nbsp; 
+                        </l1>
+                        <l1>
+                            <a href="char.html" style="vertical-align: inherit; color: white;">Characters</a> &nbsp; 
+                        </l1>
+                        <l1>
+                            <a href="dev.html" style="vertical-align: inherit; color: white;">Development</a> &nbsp; 
+                        </l1>
+                        <l1>
+                            <a href="ost.html" style="vertical-align: inherit; color: white;" title="May lag upon loading!">Soundtrack</a> &nbsp; 
+                        </l1>
+                        <l1>
+                            <a href="fart.html" style="vertical-align: inherit; color: white;">Fanart</a> &nbsp; 
+                        </l1>
+                    </nav>
+                </div>
+            </header>
+            <div style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center; margin: 10px; border-style: inset; border-color: black; background: white;">
+                <h1>WINDO FANART</h1>
+                <p>Here you can find fanarts of the Windo! Hover over an image to see who made it. Click on an image to be directed to the artist's main social platform! If you can't click on one, it just means they don't have a special link.<br>If you would like your fanart to be put here, join the <a href="https://discord.gg/chkPkB5">discord server</a> and post it there!</p>
             </div>
-        </header>
-        <div style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center; margin: 10px; border-style: inset; border-color: black; background: white;">
-            <h1>WINDO FANART</h1>
-            <p>Here you can find fanarts of the Windo! Hover over an image to see who made it. Click on an image to be directed to the artist's main social platform! If you can't click on one, it just means they don't have a special link.<br>If you would like your fanart to be put here, join the <a href="https://discord.gg/chkPkB5">discord server</a> and post it there!</p>
-        </div>
-        <div style="border-style: inset; border-color: black; background: white; width: 900px; position: relative; text-align: center; margin-left: auto; margin-right: auto;">
-            <a href="https://www.youtube.com/channel/UCbsScFH8nCep-2dF71bx0Uw" title="Art by Spr6">
-                <img src="art1.png" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
-            </a>
-            <a href="https://www.youtube.com/channel/UCbsScFH8nCep-2dF71bx0Uw" title="Art by Spr6">
-                <img src="art2.png" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
-            </a>
-            <a title="Art by SONGDarkHorse (discord)">
-                <img src="art3.jpg" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
-            </a>
-            <a href="https://www.youtube.com/@UltraNinja" title="Art by UltraNinja">
-                <img src="art4.png" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
-            </a>
-            <a title="Art by M_N (discord)">
-                <img src="art5.png" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
-            </a>
-            <a href="https://www.youtube.com/channel/UCbkHT9TI9dCvyHuwSofGuYQ" title="Art by Ouassim">
-                <img src="art6.png" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
-            </a>
-            <a href="https://www.youtube.com/channel/UCbkHT9TI9dCvyHuwSofGuYQ" title="Art by Ouassim">
-                <img src="art7.png" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
-            </a>
-            <a title="Art by Sadal (discord)">
-                <img src="art8.png" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
-            </a>
-            <a title="Art by cereal_meow (discord)">
-                <img src="art9.jpg" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
-            </a>
-            <a href="https://bsky.app/profile/did:plc:gltzg3obthl5jmw33ztqexca" title="Art by And&Ampersand">
-                <img src="art10.jpg" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
-            </a>
-            <a title="Art by XenoHorizon_ (discord)">
-                <img src="art11.png" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
-            </a>
-            <a href="https://bsky.app/profile/did:plc:mj4dj3rcfmhm7dnengtvqwwu" title="Art by ZackRemorqGD">
-                <img src="art12.png" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
-            </a>
-            <a href="https://www.youtube.com/@gaztrom5799" title="Art by Gaztrom">
-                <img src="art13.jpg" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
-            </a>
-            <a title="Art by py6n (discord)">
-                <img src="art14.png" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
-            </a>
-            <a title="Art by py6n (discord)">
-                <img src="art15.png" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
-            </a>
-            <a href="https://www.youtube.com/channel/@HeckinLeBork" title="Art by HeckinLeBork">
-                <img src="art16.jpg" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
-            </a>
-            <a href="https://bsky.app/profile/did:plc:mj4dj3rcfmhm7dnengtvqwwu" title="Art by ZackRemorqGD">
-                <img src="art17.gif" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
-            </a>
-        </div>
-        <hr>
-        <div class="site-footer">
-            <p style="vertical-align: inherit;"> Copyright &copy; 2026 WindoniaWorkz&trade;. All Rights Reserved.<br>
-            <a href="mailto:windowsgod2@gmail.com">Contact Windo</a>
-            </p>
+            <div style="border-style: inset; border-color: black; background: white; width: 900px; position: relative; text-align: center; margin-left: auto; margin-right: auto;">
+                <a href="https://www.youtube.com/channel/UCbsScFH8nCep-2dF71bx0Uw" title="Art by Spr6">
+                    <img src="art1.png" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
+                </a>
+                <a href="https://www.youtube.com/channel/UCbsScFH8nCep-2dF71bx0Uw" title="Art by Spr6">
+                    <img src="art2.png" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
+                </a>
+                <a title="Art by SONGDarkHorse (discord)">
+                    <img src="art3.jpg" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
+                </a>
+                <a href="https://www.youtube.com/@UltraNinja" title="Art by UltraNinja">
+                    <img src="art4.png" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
+                </a>
+                <a title="Art by M_N (discord)">
+                    <img src="art5.png" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
+                </a>
+                <a href="https://www.youtube.com/channel/UCbkHT9TI9dCvyHuwSofGuYQ" title="Art by Ouassim">
+                    <img src="art6.png" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
+                </a>
+                <a href="https://www.youtube.com/channel/UCbkHT9TI9dCvyHuwSofGuYQ" title="Art by Ouassim">
+                    <img src="art7.png" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
+                </a>
+                <a title="Art by Sadal (discord)">
+                    <img src="art8.png" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
+                </a>
+                <a title="Art by cereal_meow (discord)">
+                    <img src="art9.jpg" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
+                </a>
+                <a href="https://bsky.app/profile/did:plc:gltzg3obthl5jmw33ztqexca" title="Art by And&Ampersand">
+                    <img src="art10.jpg" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
+                </a>
+                <a title="Art by XenoHorizon_ (discord)">
+                    <img src="art11.png" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
+                </a>
+                <a href="https://bsky.app/profile/did:plc:mj4dj3rcfmhm7dnengtvqwwu" title="Art by ZackRemorqGD">
+                    <img src="art12.png" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
+                </a>
+                <a href="https://www.youtube.com/@gaztrom5799" title="Art by Gaztrom">
+                    <img src="art13.jpg" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
+                </a>
+                <a title="Art by py6n (discord)">
+                    <img src="art14.png" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
+                </a>
+                <a title="Art by py6n (discord)">
+                    <img src="art15.png" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
+                </a>
+                <a href="https://www.youtube.com/channel/@HeckinLeBork" title="Art by HeckinLeBork">
+                    <img src="art16.jpg" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
+                </a>
+                <a href="https://bsky.app/profile/did:plc:mj4dj3rcfmhm7dnengtvqwwu" title="Art by ZackRemorqGD">
+                    <img src="art17.gif" style="border:2px solid #000000; padding:3px; margin:5px; width: 200px;">
+                </a>
+            </div>
+            <hr>
+            <div class="site-footer">
+                <p style="vertical-align: inherit;"> Copyright &copy; 2026 WindoniaWorkz&trade;. All Rights Reserved.<br>
+                <a href="mailto:windowsgod2@gmail.com">Contact Windo</a>
+                </p>
+            </div>
         </div>
     </body>
 </html>

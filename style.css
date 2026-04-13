@@ -7,6 +7,14 @@ body {
     background-attachment: fixed;
 }
 
+.mobile-block-message { display: none; }
+
+/* Hide website content and show message on small screens */
+@media only screen and (max-width: 768px) {
+  .desktop-content { display: none; }
+  .mobile-block-message { display: block; text-align: center; margin-top: 50px; };
+}
+
 hr {
   height: 2px;
   background-color: black;
@@ -119,7 +127,7 @@ hr {
 .windo-icon img[src*="icon.png"] {
     position: absolute;
     left: 170px;
-    top: 700px;
+    top: 670px;
     z-index: 10;
     -webkit-animation: windo-icon 2s linear 0s infinite alternate;
     animation: windo-icon 2s linear 0s infinite alternate;
