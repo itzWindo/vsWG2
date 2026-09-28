@@ -1,7 +1,7 @@
 *{padding:0; margin:0;}
 
 body {
-    background-image: url("bg.jpg");
+    background-image: url("images/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -47,7 +47,7 @@ hr {
     margin: 20px auto;
     position: relative;
     padding: 3 16px;
-    background-image: url(menu-bg.png);
+    background-image: url(images/menu-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -64,7 +64,7 @@ hr {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-color: #000;
     border-style: inset;
-    background-image: url(city-bg.png);
+    background-image: url(images/city-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -94,7 +94,7 @@ hr {
     margin: 56px auto 112px;
     position: relative;
     padding: 3 16px;
-    background-image: url(windo-bg.png);
+    background-image: url(images/windo-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
