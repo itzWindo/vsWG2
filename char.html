@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Characters | vs. Windo</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
         <div class="mobile-block-message">
@@ -73,13 +74,13 @@
                             <img src="images/hexagon.png" alt="Description" class="positioned-image" style="width: 150px">
                         </div>
                         <div class="windo-icon">
-                            <img src="images/icon.png" style="width: 100px; float: right;" alt>
+                            <img src="images/icon.png" style="width: 100px; top: 670px; float: right;" alt>
                         </div>
                         <div class="expression-container" data-expr="1">
                             <div class="sprite">
-                                <img src="images/ex1.png">
-                                <img src="images/ex2.png">
-                                <img src="images/ex3.png">
+                                <img src="images/ex1.gif">
+                                <img src="images/ex2.gif">
+                                <img src="images/ex3.gif">
                                 <img src="images/ex4.png">
                                 <img src="images/ex5.png">
                                 <img src="images/ex6.png">
@@ -90,33 +91,21 @@
                                 <img src="images/ex11.png">
                                 <img src="images/ex12.png">
                                 <img src="images/ex13.png">
+                                <img src="images/ex14.png">
+                                <img src="images/ex15.png">
+                                <img src="images/ex16.png">
                             </div>
                             <div class="button-left" style="top: 700px;">
-                                <button id="left">
+                                <button class="left">
                                     <img src="images/arrow left.png" height="60" title="Change expression!" style="cursor: pointer;">
                                 </button>
                             </div>
                             <div class="button-right" style="top: 700px;">
-                                <button id="right">
+                                <button class="right">
                                     <img src="images/arrow right.png" height="60" title="Change expression!" style="cursor: pointer;">
                                 </button>
                             </div>
                         </div>
-                        <script>
-                            const container = document.querySelector('.expression-container');
-                            const total = 13;
-                            let index = 1;
-
-                            document.getElementById('left').onclick = () => {
-                            index = index - 1 || total;
-                            container.dataset.expr = index;
-                            };
-
-                            document.getElementById('right').onclick = () => {
-                            index = index % total + 1;
-                            container.dataset.expr = index;
-                            };
-                        </script>
                         <a href="audio/WG2 chrom.mp3">
                             <img src="images/chromatic.png" style="padding: 15px; width: 250px;" title="Sound warning upon clicking!">
                         </a>
@@ -125,6 +114,45 @@
                         <a href="char3.html" title="CHANGE THEME">
                             <img src="images/windo3.gif" alt="Flipped Image" style="width: 150px; padding-right: 50px;">
                         </a>
+            </div>
+            <hr>
+            <div class="char-box-dsg" style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                <h2>Enzo</h2>
+                    <h3>Appearance</h3>
+                        <p style="padding: 10px; font-size: large;">Enzo, also known as Dark ShyGuy, is depicted as a black cube wearing a white mask with gray straps, much like a ShyGuy from the Super Mario franchise. He has a black mouth and eyes which can move around the mask freely. He has two sun cosmetics on his mask where his cheeks would be, along with a maroon oval on the top of his mask. As to what the oval represents, we may never know!.</p>
+                    <h3 style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Personality</h3>
+                        <p style="padding: 10px; font-size: large;">Enzo was originally rude and bullied others for the sake of it; a sadist. He was not morally evil, but rather a nemesis to someone a part of his group, ShyGuyGMD.<br>
+                            Over time, he would become more level-headed and adapt a sort of leader-role when needing to create plans against conflict. He still does not like ShyGuyGMD, but he is able to get along well with others, especially Windo, who he tries helping during Week 3 of vs. Windo.<br>
+                    <h3>Extra</h3>
+                        <img class="rotated-image" src="images/DSG-Banner.png" alt="Description" style="width: 450px; top: 300px;">
+                        <div class="windo-icon">
+                            <img src="images/enzo-icon.png" style="width: 100px; top: 540px; float: right;" alt>
+                        </div>
+                        <div class="expression-container" data-expr="1">
+                            <div class="sprite">
+                                <img src="images/enzo-1.gif">
+                                <img src="images/enzo-2.png">
+                                <img src="images/enzo-3.png">
+                                <img src="images/enzo-4.png">
+                                <img src="images/enzo-5.png">
+                                <img src="images/enzo-6.png">
+                            </div>
+                            <div class="button-left" style="top: 570px;">
+                                <button class="left">
+                                    <img src="images/arrow left.png" height="60" title="Change expression!" style="cursor: pointer;">
+                                </button>
+                            </div>
+                            <div class="button-right" style="top: 570px;">
+                                <button class="right">
+                                    <img src="images/arrow right.png" height="60" title="Change expression!" style="cursor: pointer;">
+                                </button>
+                            </div>
+                        </div>
+                        <a href="audio/DSG chrom.mp3">
+                            <img src="images/DSG-chromatic.png" style="padding: 15px; width: 250px;" title="Sound warning upon clicking!">
+                        </a>
+                        <img src="images/DSG-specials.png" style="width: 400px;">
+                        <img src="images/DSG-txt.png" style="width: 350px;">
             </div>
             <div class="site-footer">
                 <p style="vertical-align: inherit;"> Copyright &copy; 2026 WindoniaWorkz&trade;. All Rights Reserved.<br>

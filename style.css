@@ -88,13 +88,26 @@ hr {
     left: 100px;
 }
 
-/* Below is for the Character box in the index */
+/* Below is for the Character box for Windo */
 .char-box {
     width: 1250px;
     margin: 56px auto 112px;
     position: relative;
     padding: 3 16px;
     background-image: url(images/windo-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    outline: auto;
+}
+
+/* Below is fot the Character box for Enzo */
+.char-box-dsg {
+    width: 1250px;
+    margin: 56px auto 112px;
+    position: relative;
+    padding: 3 16px;
+    background-image: url(images/outside.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -127,7 +140,6 @@ hr {
 .windo-icon img[src*="icon.png"] {
     position: absolute;
     left: 170px;
-    top: 670px;
     z-index: 10;
     -webkit-animation: windo-icon 2s linear 0s infinite alternate;
     animation: windo-icon 2s linear 0s infinite alternate;
@@ -201,6 +213,9 @@ button {
 .expression-container[data-expr="11"] img:nth-child(11) { opacity: 1; }
 .expression-container[data-expr="12"] img:nth-child(12) { opacity: 1; }
 .expression-container[data-expr="13"] img:nth-child(13) { opacity: 1; }
+.expression-container[data-expr="14"] img:nth-child(14) { opacity: 1; }
+.expression-container[data-expr="15"] img:nth-child(15) { opacity: 1; }
+.expression-container[data-expr="16"] img:nth-child(16) { opacity: 1; }
 
 .site-footer {
     color: #fff;

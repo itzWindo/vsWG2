@@ -101,6 +101,19 @@ hr {
     outline: auto;
 }
 
+/* Below is fot the Character box for Enzo */
+.char-box-dsg {
+    width: 1250px;
+    margin: 56px auto 112px;
+    position: relative;
+    padding: 3 16px;
+    background-image: url(images/outside3-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    outline: auto;
+}
+
 .rotated-image {
     transform: rotate(350deg);
     position: absolute;
@@ -124,13 +137,27 @@ hr {
     z-index: 1;
 }
 
-.windo-icon img[src*="images/icon3.png"] {
+.windo-icon img[src*="icon3.png"] {
     position: absolute;
     left: 240px;
     top: 570px;
     z-index: 10;
     -webkit-animation: windo-icon 2s linear 0s infinite alternate;
-          animation: windo-icon 2s linear 0s infinite alternate;
+    animation: windo-icon 2s linear 0s infinite alternate;
+}
+
+.dsg-icon img[src*="icon.png"] {
+    position: absolute;
+    left: 170px;
+    top: 570px;
+    z-index: 10;
+    -webkit-animation: windo-icon 2s linear 0s infinite alternate;
+    animation: windo-icon 2s linear 0s infinite alternate;
+}
+
+button {
+  border: none;
+  background: none;
 }
 
 @-webkit-keyframes windo-icon {
@@ -176,6 +203,27 @@ hr {
     left: 490px;
     border-radius: 50%;
 }
+
+.sprite {
+  position: relative;
+  margin: 30px;
+  width: 300px;
+  height: 300px;
+}
+
+.sprite img {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.expression-container[data-expr="1"] img:nth-child(1) { opacity: 1; }
+.expression-container[data-expr="2"] img:nth-child(2) { opacity: 1; }
+.expression-container[data-expr="3"] img:nth-child(3) { opacity: 1; }
+.expression-container[data-expr="4"] img:nth-child(4) { opacity: 1; }
+.expression-container[data-expr="5"] img:nth-child(5) { opacity: 1; }
+.expression-container[data-expr="6"] img:nth-child(6) { opacity: 1; }
 
 .site-footer {
     color: #fff;
