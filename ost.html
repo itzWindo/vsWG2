@@ -1,67 +1,36 @@
 <!doctype html>
 <html>
     <head>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Soundtrack | vs. Windo</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="mobile-block-message">
-            <div class="head">This page doesn't work properly on mobile devices just yet!</div>
-            <img id="random-image" src="images/ex4.png" alt="Random Image" style="height: 200px;">
-
-            <script>
-            const images = [
-                'images/ex4.png',
-                'images/ex5.png',
-                'images/ex6.png',
-                'images/ex7.png',
-                'images/ex12.png',
-            ];
-
-            const randomIndex = Math.floor(Math.random() * images.length);
-            const selectedImage = images[randomIndex];
-
-            document.getElementById('random-image').src = selectedImage;
-            </script>
+        <div class="innr-content">
+            <nav>
+                <a href="index.html" style="vertical-align: inherit; color: white;">Home</a> &nbsp; 
+                <a href="mod.html" style="vertical-align: inherit; color: white;">Mod Downloads</a> &nbsp; 
+                <a href="char.html" style="vertical-align: inherit; color: white;">Characters</a> &nbsp; 
+                <a href="dev.html" style="vertical-align: inherit; color: white;">Development</a> &nbsp; 
+                <a href="ost.html" style="vertical-align: inherit; color: white;" title="May lag upon loading!">Soundtrack</a> &nbsp; 
+                <a href="fart.html" style="vertical-align: inherit; color: white;">Fanart</a> &nbsp; 
+            </nav>
         </div>
-        <div class="desktop-content">
-            <header id="header" style="border-style: outset; border-color: black; background: white; margin: 10px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center; font-size: large;">
-                <div class="innr-content">
-                    <nav>
-                        <l1>
-                            <a href="index.html" style="vertical-align: inherit; color: white;">Home</a> &nbsp; 
-                        </l1>
-                        <l1>
-                            <a href="mod.html" style="vertical-align: inherit; color: white;">Mod Downloads</a> &nbsp; 
-                        </l1>
-                        <l1>
-                            <a href="char.html" style="vertical-align: inherit; color: white;">Characters</a> &nbsp; 
-                        </l1>
-                        <l1>
-                            <a href="dev.html" style="vertical-align: inherit; color: white;">Development</a> &nbsp; 
-                        </l1>
-                        <l1>
-                            <a href="ost.html" style="vertical-align: inherit; color: white;" title="May lag upon loading!">Soundtrack</a> &nbsp; 
-                        </l1>
-                        <l1>
-                            <a href="fart.html" style="vertical-align: inherit; color: white;">Fanart</a> &nbsp; 
-                        </l1>
-                    </nav>
-                </div>
-            </header>
-            <div style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center; margin: 10px; border-style: inset; border-color: black; background: white;">
-                <h1>SOUNDTRACK</h1>
-                <p>Can't play the mod but still want to listen to the the soundtrack? No worries! Here, you can listen to the entire soundtrack for this mod and download all of them!<br>Clicking on the image cover will link you to the album's Bandcamp page.</p>
-            </div>
-            <hr>
-            <div style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center; margin: 10px; border-style: inset; border-color: black; background: white; padding: 10px;">
-                <a href="https://windowsgod2.bandcamp.com/album/vs-windo-full-demo-ost">
-                    <img src="images/cover.jpg" style="float: right; width: 100px;">
-                </a>
-                <h2>Vs. Windo (Demo OST)</h2>
-                <p>The first soundtrack released for the mod on March 10th, 2023. Contains five tracks and three bonus tracks (instrumentals).</p>
+        <div class="head">
+            <h1>SOUNDTRACK</h1>
+            <p>Can't play the mod but still want to listen to the the soundtrack? No worries! Here, you can listen and download soundtrack for this mod!<br>
+                Clicking on the image cover will link you to the album's Bandcamp page.</p>
+        </div>
+        <hr>
+        <div class="ost">
+            <a href="https://windowsgod2.bandcamp.com/album/vs-windo-full-demo-ost">
+                <img src="images/cover.jpg" style="float: right; width: 100px;">
+            </a>
+            <h2>Vs. Windo (Demo OST)</h2>
+            <p>The first soundtrack released for the mod on March 10th, 2023. Contains five tracks and three bonus tracks (instrumentals).</p>
+            <div class="ost-container">
                 <table border="5" style="background-color:white; width: 900px; position: relative; text-align: center; margin-left: auto; margin-right: auto;">
                     <tr class="tabletitle">
                         <td colspan="5" style="border-style: none;"><b>Demo Soundtrack</b></td>
@@ -162,13 +131,15 @@
                     </tr>
                 </table>
             </div>
-            <hr>
-            <div style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center; margin: 10px; border-style: inset; border-color: black; background: white; padding: 10px;">
-                <a href="https://windowsgod2.bandcamp.com/album/vs-windo-weeks-2-3-ost">
-                    <img src="images/cover3.jpg" style="float: right; width: 100px;">
-                </a>
-                <h2>Vs. Windo (Weeks 2-3 OST)</h2>
-                <p>The second soundtrack released for the mod on November 27th, 2024. Contains twenty tracks and six bonus tracks (instrumentals).</p>
+        </div>
+        <hr>
+        <div class="ost">
+            <a href="https://windowsgod2.bandcamp.com/album/vs-windo-weeks-2-3-ost">
+                <img src="images/cover3.jpg" style="float: right; width: 100px;">
+            </a>
+            <h2>Vs. Windo (Weeks 2-3 OST)</h2>
+            <p>The second soundtrack released for the mod on November 27th, 2024. Contains twenty tracks and six bonus tracks (instrumentals).</p>
+            <div class="ost-container">
                 <table border="5" style="background-color:white; width: 900px; position: relative; text-align: center; margin-left: auto; margin-right: auto;">
                     <tr class="tabletitle">
                         <td colspan="5" style="border-style: none;"><b>Weeks 2-3 Soundtrack</b></td>
@@ -473,12 +444,11 @@
                     </tr>
                 </table>
             </div>
-            <hr>
-            <div class="site-footer">
-                <p style="vertical-align: inherit;"> Copyright &copy; 2026 WindoniaWorkz&trade;. All Rights Reserved.<br>
-                <a href="mailto:windowsgod2@gmail.com">Contact Windo</a>
-                </p>
-            </div>
+        </div>
+        <div class="site-footer">
+            <p style="vertical-align: inherit;"> Copyright &copy; 2026 WindoniaWorkz&trade;. All Rights Reserved.<br>
+            <a href="mailto:windowsgod2@gmail.com">Contact Windo</a>
+            </p>
         </div>
     </body>
 </html>

@@ -7,57 +7,90 @@ body {
     background-attachment: fixed;
 }
 
-.mobile-block-message { display: none; }
-
-/* Hide website content and show message on small screens */
-@media only screen and (max-width: 768px) {
-  .desktop-content { display: none; }
-  .mobile-block-message { display: block; text-align: center; margin-top: 50px; };
-}
-
-hr {
-  height: 2px;
-  background-color: black;
-}
-
 /* Below is for the navigation bar */
 .innr-content {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    border-bottom: #555 solid 1px;
+    padding: 8px 0;
     background-color: #333;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: large;
 }
 
 /* Below is for general headers */
 .head {
-    width: 100%;
+    max-width: 100%;
     padding: 0px 0 10px;
-    border-top: #555 solid 2px;
-    border-bottom: #555 solid 2px;
     background-color: #fff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
 }
 
-/* Below is for the Development History box */
-.dev-box {
-    width: 1456px;
-    margin: 20px auto;
+hr {
+    height: 3px;
+    background-color: black;
+}
+
+/* Container for the index */
+.index-container {
     position: relative;
-    padding: 3 16px;
-    background-image: url(images/menu-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    outline: auto;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.index-banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Below is for the logo in the index */
+.logo-bump {
+    width: 30%;
+    max-width: 500px;
+    min-width: 100px;
+    transform: rotate(355deg);
+    display:block;
+    position: absolute;
+    z-index: 2;
+}
+
+.logo-bump img {
+    width: 100%;
+    height: auto;
+}
+
+/* Below is for the small clickable boxes in the index */
+.smol-box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 15px 10px;
+    background-color: black;
+}
+
+.smol-box {
+    flex: 1 1 140px;
+    max-width: 160px;
+    height: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    line-height: 50px;
+    text-align: center;
+    border: 2px inset black;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    font-weight: bold;
 }
 
 /* Below is for the Mod Downloads box */
 .mod-box {
-    width: 1456px;
+    max-width: 1200px;
     text-align: center;
     margin: 20px auto;
     position: relative;
@@ -70,87 +103,62 @@ hr {
     background-attachment: fixed;
 }
 
-/* Below is for the small clickable boxes in the index */
-.smol-box {
-    width: 150px;
-    height: 50px;
-    position: absolute;
+/* Below is for the Development History box */
+.dev-box {
+    max-width: 1150px;
+    margin: 30px auto;
+    position: relative;
+    padding: 30px;
+    background-image: url(images/menu-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border: 3px inset #000;
+    border-radius: 8px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: large;
-    line-height: 50px;
-    border-color: #000;
-    border-style: inset;
-    border-radius: 10px;
-    background-size: cover;
-    background-attachment: fixed;
-    align-items: center;
-    bottom: 0px;
-    left: 100px;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
-/* Below is for the Character box for Windo */
-.char-box {
-    width: 1250px;
-    margin: 56px auto 112px;
-    position: relative;
-    padding: 3 16px;
-    background-image: url(images/windo-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    outline: auto;
+.version-group {
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid #333;
+    border-radius: 6px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Below is fot the Character box for Enzo */
-.char-box-dsg {
-    width: 1250px;
-    margin: 56px auto 112px;
-    position: relative;
-    padding: 3 16px;
-    background-image: url(images/outside.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    outline: auto;
+.version-group h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    color: #111;
 }
 
-/* Below is for the banner image in Characters */
-.rotated-image {
-    transform: rotate(350deg);
-    position: absolute;
-    left: 750px;
-    top: 420px;
-    z-index: 0;
+.changelog-release {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #222;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-/* Below is for the logo in the index */
-.logo-bump {
-    transform: rotate(350deg);
-    position: absolute;
-    z-index: 0;
+.dev-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95em;
+    line-height: 1.5;
 }
 
-.hexagonal {
-    position: absolute;
-    left: 600px;
-    top: 540px;
-    z-index: 1;
+.dev-box li {
+    margin-bottom: 4px;
 }
 
-.windo-icon img[src*="icon.png"] {
-    position: absolute;
-    left: 170px;
-    z-index: 10;
-    -webkit-animation: windo-icon 2s linear 0s infinite alternate;
-    animation: windo-icon 2s linear 0s infinite alternate;
-}
-
-button {
-  border: none;
-  background: none;
-}
-
-@-webkit-keyframes windo-icon {
+/* Below is stuffs for Characters */
+@-webkit-keyframes icon {
   0% {
     -webkit-transform: rotate(-15deg);
             transform: rotate(-15deg);
@@ -161,7 +169,7 @@ button {
             transform: rotate(15deg); } 
 }
 
-@keyframes windo-icon {
+@keyframes icon {
   0% {
     -webkit-transform: rotate(-15deg);
             transform: rotate(-15deg);
@@ -170,34 +178,6 @@ button {
   100% {
     -webkit-transform: rotate(15deg);
             transform: rotate(15deg); }
-}
-
-.button-left {
-    position: absolute;
-    top: 725px;
-    left: 30px;
-    border-radius: 50%;
-}
-
-.button-right {
-    position: absolute;
-    top: 725px;
-    left: 340px;
-    border-radius: 50%;
-}
-
-.sprite {
-  position: relative;
-  margin: 30px;
-  width: 300px;
-  height: 300px;
-}
-
-.sprite img {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  transition: opacity 0.25s ease;
 }
 
 .expression-container[data-expr="1"] img:nth-child(1) { opacity: 1; }
@@ -217,12 +197,245 @@ button {
 .expression-container[data-expr="15"] img:nth-child(15) { opacity: 1; }
 .expression-container[data-expr="16"] img:nth-child(16) { opacity: 1; }
 
+/* Below is for the Character box for Windo */
+.hallmark {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.char-box {
+    width: 1300px;
+    height: 900px;
+    margin: 56px auto;
+    position: relative;
+    box-sizing: border-box;
+    background-image: url(images/windo-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    outline: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.char-box img {
+    position: absolute;
+}
+
+.char-box img[src*="arrow left"] {
+    bottom: 100px;
+    left: 30px;
+    border-radius: 50%;
+    height: 60px;
+    border: none;
+    background: none;
+}
+
+.char-box img[src*="arrow right"] {
+    bottom: 100px;
+    left: 340px;
+    border-radius: 50%;
+    height: 60px;
+    border: none;
+    background: none;
+}
+
+.char-box img[src*="banner"] {
+    transform: rotate(350deg);
+    left: 800px;
+    bottom: 200px;
+    z-index: 0;
+    width: 450px;
+}
+
+.char-box img[src*="hexagon"] {
+    left: 600px;
+    bottom: 200px;
+    width: 200px;
+}
+
+.char-box img[src*="icon"] {
+    width: 100px;
+    bottom: 100px;
+    left: 170px;
+    z-index: 10;
+    -webkit-animation: icon 2s linear 0s infinite alternate;
+    animation: icon 2s linear 0s infinite alternate;
+}
+
+.char-box img[src*="chromatic"] {
+    padding: 15px;
+    width: 250px;
+    left: 0px;
+    bottom: 0px;
+}
+
+.char-box img[src*="specials"] {
+    padding: 15px;
+    width: 400px;
+    left: 270px;
+    bottom: 0px;
+}
+
+.char-box img[src*="txt1"] {
+    padding: 15px;
+    width: 350px;
+    left: 700px;
+    bottom: 0px;
+}
+
+.char-box img[src*="windo3"] {
+    padding: 15px;
+    width: 150px;
+    left: 1100px;
+    bottom: 0px;
+    transform: scaleX(-1);
+}
+
+.sprite {
+    position: relative;
+    margin: 30px;
+    width: 300px;
+    height: 300px;
+}
+
+.sprite img {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+/* Enzo */
+.char-box img[src*="DSG-chromatic"] {
+    padding: 15px;
+    width: 250px;
+    left: 80px;
+    bottom: 0px;
+}
+
+.char-box img[src*="DSG-specials"] {
+    padding: 15px;
+    width: 400px;
+    left: 420px;
+    bottom: 0px;
+}
+
+.char-box img[src*="DSG-txt"] {
+    padding: 15px;
+    width: 350px;
+    left: 850px;
+    bottom: 0px;
+}
+
+/* Below is for the OST */
+.ost {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 10px;
+    border-style: inset;
+    border-color: black;
+    background: white;
+    padding: 10px;
+}
+
+.ost-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 15px 0;
+}
+
+.ost table {
+    width: 100% !important;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Mobile stuff for ost.html */
+@media (max-width: 768px) {
+    .innr-content nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px 12px;
+        padding: 4px;
+    }
+
+    .ost audio {
+        width: 110px;
+    }
+    
+    .head {
+        padding: 10px;
+    }
+
+    .head p {
+        font-size: 0.9em;
+        padding: 0 10px;
+    }
+}
+
+/* Below is for the fanart tab */
+.fanart-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border: inset 2px black;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.fanart-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.fanart-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: none;
+}
+
+.fanart-credit {
+    margin-top: 6px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.9em;
+}
+
+/* Mobile stuff for fart.html */
+@media (max-width: 768px) {
+    .fanart-grid {
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+        padding: 10px;
+    }
+    
+    .fanart-item img {
+        height: 150px;
+    }
+}
+
 .site-footer {
-    color: #fff;
-    background: #000;
-    padding: 20px 0 20px;
-    margin: 0;
+    width: 100%;
+    background: black;
+    line-height: 100%;
+    padding: 7px 0;
+    font-style: normal;
+    color: white;
+    font-size: 0.9em;
 }
 .site-footer p {
+    display: block;
+    unicode-bidi: isolate;
     text-align: center; 
 }
