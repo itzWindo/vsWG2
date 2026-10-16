@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>404</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+                display: block;
+                text-align: center;
+            };
+        </style>
+    </head>
+    <body>
+        <div class="head">
+            <h1>Uh oh!</h1>
+            <p>The page you're looking for does not exist!<br>Click the Windo below to return to the index!</p>
+        </div>
+        <hr>
+        <a href="index.html">
+            <img id="random-image" src="images/ex2.gif" style="height: 200px;">
+        </a>
+        <script>
+            const images = [
+                'images/ex2.gif',
+                'images/ex3.gif',
+                'images/ex4.png',
+                'images/ex5.png',
+                'images/ex6.png',
+                'images/ex7.png',
+                'images/ex12.png',
+            ];
+
+            const randomIndex = Math.floor(Math.random() * images.length);
+            const selectedImage = images[randomIndex];
+
+            document.getElementById('random-image').src = selectedImage;
+        </script>
+    </body>
+</html>
