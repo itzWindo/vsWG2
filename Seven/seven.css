@@ -1,0 +1,72 @@
+* { margin: 0; padding: 0; }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.countdown-container {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(50px) translateZ(0) rotateX(8deg);
+    animation: slide 1.2s ease-out 0.5s forwards;
+    position: relative;
+    overflow-y: auto;
+    will-change: transform, opacity;
+    transform-style: preserve-3d;
+}
+
+@keyframes slide {
+    to {
+        opacity: 1;
+        transform: translateY(0) translateZ(0) rotateX(0deg);
+    }
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    animation: fade 2s ease-out 1s forwards;
+}
+
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
+}
+
+.time-box {
+    text-align: center;
+    min-width: 70px;
+}
+
+.time-box span {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    background: #434343;
+    padding: 10px;
+}
+
+.label {
+    margin-top: 5px;
+    font-size: 0.85rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
