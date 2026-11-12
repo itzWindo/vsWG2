@@ -21,7 +21,7 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: 180px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     width: 100%;
 }
 
@@ -48,7 +48,8 @@ body {
 #info {
     color: white;
     font-weight: bold;
-    margin: 40px 300px 0 300px;
+    margin: 40px 100px 0 100px;
+    padding-bottom: 20px;
     text-align: center;
     opacity: 0;
     animation: slide 2s ease-out 4s forwards;
@@ -83,6 +84,28 @@ body {
     margin-left: 200px;
     margin-right: 200px;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    #platforms, #platform-links {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #platform-links {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    #platform-links img {
+        width: 100% !important;
+        max-width: 60px;
+        height: auto;
+    }
+
+    #info {
+        margin: 40px 20px 0 20px;
+    }
 }
 
 @keyframes fade {
