@@ -20,7 +20,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    padding-top: 180px;
+    padding-bottom: 40px;
     width: 100%;
 }
 
@@ -45,13 +46,10 @@ body {
 }
 
 #info {
-    position: absolute;
     color: white;
     font-weight: bold;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin: 40px 300px 0 300px;
     text-align: center;
-    top: 500px;
     opacity: 0;
     animation: slide 2s ease-out 4s forwards;
 }
