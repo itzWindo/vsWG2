@@ -1,45 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="icon" type="image/x-icon" href="Seven/windo-white.png">
+        <link rel="icon" type="image/x-icon" href="Seven/Windo7.png">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Seven</title>
+        <title>Seven | Official Site</title>
         <link rel="stylesheet" href="Seven/seven.css">
         <script src="Seven/seven.js" defer></script>
 
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://itzwindo.github.io/vsWG2/seven.html">
-        <meta property="og:title" content="Countdown to Seven">
-        <meta property="og:description" content="A 20-track album by Windo releasing on November 23, 2026 that marks [SEVEN] years of uploading music on YouTube.">
+        <meta property="og:title" content="Seven | Official Site">
+        <meta property="og:description" content="A 20-track album by Windo released on November 23, 2026 that marks [SEVEN] years of uploading music on YouTube!">
         <meta property="og:image" content="https://itzwindo.github.io/vsWG2/Seven/thumbnail.png">
         <meta name="theme-color" content="#777777">
         <meta name="twitter:card" content="summary_large_image">
     </head>
     <body>
-        <video autoplay muted loop playsinline id="bg-video">
-            <source src="Seven/static.mp4" type="video/mp4">
-        </video>
+        <div class="bg-layer"></div>
         <div class="content-cluster">
-            <img src="Seven/windo-white.png" class="windo-rotate"/>
-            <div class="countdown-container" id="countdown-container">
-                <div class="time-box">
-                    <span id="days">00</span>
-                    <div class="label">Days</div>
-                </div>
-                <div class="time-box">
-                    <span id="hours">00</span>
-                    <div class="label">Hours</div>
-                </div>
-                <div class="time-box">
-                    <span id="minutes">00</span>
-                    <div class="label">Minutes</div>
-                </div>
-                <div class="time-box">
-                    <span id="seconds">00</span>
-                    <div class="label">Seconds</div>
-                </div>
-            </div>
+            <img src="Seven/logo.png" class="windo-Faded"/>
+        </div>
+        <div id="announcement">
+            <h1>Seven is out now!</h1>
+            <h3>Scroll down for the different platforms you can listen/stream it on!</h3>
         </div>
         <div class="info" id="info">
             <h1><i>"A bit of everything, for everyone."</i></h1><br>
@@ -48,7 +32,7 @@
         </div>
         <br>
         <div class="video-section" id="video-section">
-            <h2>Individual Uploads</h2>
+            <h2>Individual YouTube Uploads</h2>
             <div class="video-grid">
                 <div class="video-card">
                     <iframe src="https://www.youtube.com/embed/talkMTMMhqU" title="Interstellar +PLUS" frameborder="0" allowfullscreen></iframe>
@@ -81,25 +65,38 @@
         </div>
         <div class="platforms" id="platforms">
             <h2>Platforms</h2><br>
-            <p>These are the platforms where you'll be able to find Seven on.</p><br>
+            <p>These are the main platforms you can find Seven on. More will be added soon!<br>
+            <i>NOTE: Some links are still being updated!</i></p>
             <div class="platform-links" id="platform-links">
-                <a href="https://www.youtube.com/watch?v=ueP0odWJZ6A" title=YouTube">
+                <a href="https://www.youtube.com/watch?v=ueP0odWJZ6A" title="YouTube">
                     <img style="width: 77px;" src="Seven/youtube.webp">
                 </a>
                 <a href="https://windowsgod2.bandcamp.com/album/seven" title="Bandcamp">
                     <img style="width: 77px;" src="Seven/bandcamp.svg">
                 </a>
-                <img style="width: 77px;" src="Seven/soundcloud.png" title="Soundcloud">
+                <a href="https://soundcloud.com/user-41010340/sets/seven" title="SoundCloud">
+                    <img style="width: 77px;" src="Seven/soundcloud.png">
+                </a>
                 <img style="width: 77px;" src="Seven/newgrounds.png" title="Newgrounds">
-                <img style="width: 77px;" src="Seven/spotify.png" title="Spotify">
-                <img style="width: 77px;" src="Seven/amazon-music.png" title="Amazon Music">
-                <img style="width: 77px;" src="Seven/pandora.svg" title="Pandora">
-                <img style="width: 77px;" src="Seven/apple-music.webp" title="Apple Music">
-                <img style="width: 77px;" src="Seven/deezer.png" title="Deezer">
+                <a href="https://open.spotify.com/album/45Cd4KeWAtMdAPOaHwSYK7" title="Spotify">
+                    <img style="width: 77px;" src="Seven/spotify.png">
+                </a>
+                <a href="https://music.amazon.com/albums/B0HSFYT3TC" title="Amazon Music">
+                    <img style="width: 77px;" src="Seven/amazon-music.png">
+                </a>
+                <a href="https://www.pandora.com/artist/windo/7/AL3x4Vv4P5vbV24" title="Pandora">
+                    <img style="width: 77px;" src="Seven/pandora.svg" title="Pandora">
+                </a>
+                <a href="https://music.apple.com/album/seven/6837444848" title="Apple Music">
+                    <img style="width: 77px;" src="Seven/apple-music.webp" title="Apple Music">
+                </a>
+                <a href="https://www.deezer.com/us/album/1151890441" title="Deezer">
+                    <img style="width: 77px;" src="Seven/deezer.png">
+                </a>
             </div>
         </div>
-                    <audio id="msaa" src="Seven/my super awesome album.opus"></audio>
-            <img id="widos" src="images/ex16.png" style="cursor: pointer;" onclick="document.getElementById('msaa').play()">
+            <audio id="msaa" src="Seven/my super awesome album.opus"></audio>
+            <img id="widos" src="images/ex16.png" style="cursor: pointer;">
         <div class="site-footer">
             <p style="vertical-align: inherit;"> Copyright &copy; 2026 WindoniaWorkz&trade;. All Rights Reserved.<br>
             <a href="mailto:windowsgod2@gmail.com">Contact Windo</a>
