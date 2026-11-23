@@ -1,28 +1,51 @@
-const targetDate = new Date("2026-11-23T07:00:00-08:00").getTime();
-
-const timerInterval = setInterval(function() {
-    const now = new Date().getTime();
-    const distance = targetDate - now;
-
-    if (distance < 0) {
-        clearInterval(timerInterval);
-        return;
-    }
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    document.getElementById("days").innerHTML = String(days).padStart(2, '0');
-    document.getElementById("hours").innerHTML = String(hours).padStart(2, '0');
-    document.getElementById("minutes").innerHTML = String(minutes).padStart(2, '0');
-    document.getElementById("seconds").innerHTML = String(seconds).padStart(2, '0');
-}, 1000);
-
 setTimeout(function() {
     const videoSection = document.getElementById("video-section");
     if (videoSection) {
         videoSection.classList.add("show");
     }
 }, 4200);
+
+(function() {
+    const widos = document.getElementById("widos");
+    const audio = document.getElementById("msaa");
+    if (!widos || !audio) return;
+
+    const COOKIE_NAME = "widos_vanished";
+
+    function hasVanishedCookie() {
+        return document.cookie.split("; ").some((row) => row.startsWith(COOKIE_NAME + "=1"));
+    }
+
+    function setVanishedCookie() {
+        document.cookie = `${COOKIE_NAME}=1; max-age=31536000; path=/; SameSite=Lax`;
+    }
+
+    if (hasVanishedCookie()) {
+        widos.classList.add("widos-locked", "widos-hidden");
+        return;
+    }
+
+    let isTriggered = false;
+
+    widos.addEventListener("click", function() {
+        if (isTriggered) return;
+        isTriggered = true;
+
+        widos.classList.add("widos-playing");
+        widos.style.cursor = "default";
+
+        audio.currentTime = 0;
+        audio.play().catch(() => {
+        });
+    });
+
+    audio.addEventListener("ended", function() {
+        widos.classList.remove("widos-playing");
+        widos.classList.add("widos-locked");
+        setVanishedCookie();
+
+        setTimeout(function() {
+            widos.classList.add("widos-hidden");
+        }, 1000);
+    });
+})();
